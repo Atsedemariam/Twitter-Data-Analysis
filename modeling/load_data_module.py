@@ -5,3 +5,4 @@ import plotly.express as px
 def load_data():
     data = pd.DataFrame(px.data.gapminder())
     return data
+    
