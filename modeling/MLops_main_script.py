@@ -5,8 +5,6 @@ import deploy_on_graph_module
 import load_data_module 
 st.set_page_config(layout = "wide")
 
-
-
 df= load_data_module.load_data()
 
 st.title("10 Academy MLops Project on National Statistics Data")
