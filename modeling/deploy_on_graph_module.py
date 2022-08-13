@@ -15,7 +15,9 @@ def load_graph(page,df):
     fig = px.line(df[df['country'] == country], 
       x = "year", y = "gdpPercap",title = "GDP per Capita")
  
-    
+    column1= col1.plotly_chart(fig,use_container_width = True)
+    fig = px.line(df[df['country'] == country], 
+      x = "year", y = "pop",title = "Population Growth")
   
     column2= col2.plotly_chart(fig,use_container_width = True)
     return column1, column2
